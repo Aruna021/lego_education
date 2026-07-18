@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Nunito:wght@600;700;800;900&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Nunito", sans-serif;
+  
+  --color-lego-red: #D01012;
+  --color-lego-yellow: #FFD500;
+  --color-lego-blue: #006DB7;
+  --color-lego-blue-dark: #00548C;
+  --color-lego-gray-light: #F4F4F4;
+  --color-lego-gray: #E0E0E0;
+  --color-lego-dark: #101820;
+}
+
+@layer base {
+  body {
+    @apply font-sans bg-gray-50 text-slate-900 selection:bg-lego-yellow/30 antialiased overflow-x-hidden;
+  }
+}
+
+/* Custom scrollbar matching LEGO colors */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #F4F4F4;
+}
+::-webkit-scrollbar-thumb {
+  background: #006DB7;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #D01012;
+}
+

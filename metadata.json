@@ -1,0 +1,6 @@
+{
+  "name": "LEGO Education",
+  "description": "A vibrant showcase and marketing platform for LEGO Education kits, curricula, and dynamic STEM systems.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
